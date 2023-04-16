@@ -1,12 +1,19 @@
-.Gallery{
-    display: flex;
-    width: 100%;
+.Gallery {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 5%;
+  padding: 56px 50px 0px 50px;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+
+  @media (max-width: 900px) {
+    background-color: white;
+    overflow-y: hidden;
     height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    gap: 5%;
-    padding: 56px 50px 0px 50px;
-    box-sizing: border-box;
-    background-color: #F6F6F6;
+    padding: 0;
+  }
 }

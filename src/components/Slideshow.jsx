@@ -39,7 +39,9 @@ function Slideshow({ slides }){
                   ></p>
                 ))}
               </div>
-
+              
+              {slides.length > 1 && (
+              <div>
               <div className="arrow_left" onClick={handleArrowLeftClick}>
                 <img src={ArrowLeft} alt="" />
               </div>
@@ -49,6 +51,8 @@ function Slideshow({ slides }){
               <div className="arrow_right" onClick={handleArrowRightClick}>
               <img src={ArrowRight} alt="" />
               </div>
+              </div>
+              )}
             </div>
           );
         };

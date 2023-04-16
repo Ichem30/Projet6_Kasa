@@ -1,31 +1,31 @@
-nav{
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+
+  ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
+    list-style: none;
+    gap: 50px;
+  }
 
-    ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        gap: 50px;
-    }
+  li {
+    color: #ff6060;
+    font-size: 24px;
+  }
 
-    li{
-        color: #FF6060;
-        font-size: 24px;
-    }
+  a {
+    text-decoration: none;
+    color: unset;
+  }
 
-    a{
-        text-decoration: none;
-        color: unset;
-    }
+  a:hover {
+    text-decoration: underline;
+  }
 
-    a:hover{
-        text-decoration: underline;
-    }
-
-    a:active {
-        text-decoration: underline;
-      }
+  a:active {
+    text-decoration: underline;
+  }
 }

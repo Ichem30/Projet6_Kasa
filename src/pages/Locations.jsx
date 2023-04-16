@@ -1,6 +1,7 @@
 import React from "react"
 import Collapse from "../components/Collapse"
 import Slideshow from "../components/Slideshow"
+import ErrorPage from "./ErrorPage" 
 import '../styles/Location.scss'
 import data from '../data/logements.json'
 import { useParams, useNavigate } from 'react-router-dom'
@@ -9,33 +10,36 @@ import Star from '../components/Star'
 function Locations() {
 
     const { id } = useParams()
-    const location = data.find(location => location.id === id)
+
+    const locationDetails = data.find(locationDetails => locationDetails.id === id)
     const navigate = useNavigate()
 
-    const hostRating = Number(location.rating);
+    if (!locationDetails) {
+        navigate('/Error');
+        return (<ErrorPage />)
+
+    }
+    const hostRating = Number(locationDetails.rating);
     let ratings = Array(5).fill(null);
 
     ratings.forEach((_, index) => {
         ratings[index] = index + 1;
     });
-    
-    if (!location) {
-        navigate('/error');
-      }
 
-    return (
+    return  (
+        
         <section className="Location_container">
             <div className="Location_Img">
-                <Slideshow slides={location.pictures} />
+                <Slideshow slides={locationDetails.pictures} />
             </div>
                 <div className="Location_content">
 
                     <div className="Location_title">
-                        <h1>{location.title}</h1>
-                        <h2>{location.location}</h2>
+                        <h1>{locationDetails.title}</h1>
+                        <h2>{locationDetails.location}</h2>
 
                      <ul>
-                      {location.tags.map((tag, index) => (
+                      {locationDetails.tags.map((tag, index) => (
                       <li key={index} className="Location_tags">{tag} </li>
                       ))}
                     </ul>
@@ -44,8 +48,8 @@ function Locations() {
 
                     <div className="Location_owner">
                         <div className="Owner_profil">
-                        <p className="Owner_Name">{location.host.name}</p>
-                        <img src={location.host.picture} alt="" />
+                        <p className="Owner_Name">{locationDetails.host.name}</p>
+                        <img src={locationDetails.host.picture} alt="" />
                         </div>
 
                         <div className="Location_stars">
@@ -67,13 +71,13 @@ function Locations() {
             <div className="Location_Collapses">
                 <div className="Collapse_left">
                     <Collapse title="Description">
-                    <p>{location.description}</p>
+                    <p>{locationDetails.description}</p>
                     </Collapse>
                 </div>
                 <div className="Collapse_right">
                    <Collapse title="Equipements">
                    <ul>
-                    {location.equipments.map((equipment, index) => (
+                    {locationDetails.equipments.map((equipment, index) => (
                     <li key={index}>{equipment}</li>
                     ))}
                 </ul></Collapse>
