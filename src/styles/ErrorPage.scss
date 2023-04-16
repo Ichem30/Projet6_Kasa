@@ -1,0 +1,25 @@
+.error_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    color: #ff6060;
+    
+    h1 {
+        font-size: 288px;
+    }
+
+    p {
+        font-size: 36px;
+        margin-bottom: 234px;
+        text-align: center;
+    }
+
+    div {
+
+        a {
+            color: #ff6060;
+            font-size: 18px;
+        }
+    }
+}

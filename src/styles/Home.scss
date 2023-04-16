@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Regular.ttf');
+}
+
+.body {
+    max-width: 1820px;
+    margin: auto;
+    padding: 0 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    margin: 0;
+}

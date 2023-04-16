@@ -1,0 +1,21 @@
+.banner {
+   /* background-image: url('../assets/banner.png'); */
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    h1 {
+        color: white;
+        font-size: calc(36px + 1vw);
+        font-weight: 500;
+        padding: 2% 50px;
+    }
+}
