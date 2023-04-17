@@ -9,6 +9,7 @@ nav {
     justify-content: space-between;
     list-style: none;
     gap: 50px;
+    padding: 1%;
   }
 
   li {
@@ -27,5 +28,28 @@ nav {
 
   a:active {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 900px) {
+  a {
+    height: 15%;
+    width: 25%;
+
+    img{
+      width: 100%;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+
+    li {
+
+      a {
+        font-size: calc(14px + 1vw);
+      }
+    }
   }
 }
