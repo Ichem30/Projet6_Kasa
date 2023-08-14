@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+Kasa est une application web de location immobilière.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Initialisation du projet en suivant des cours sur React et en s'assurant de comprendre la demande relative au projet Kasa. Cela implique d'installer l'application React, initialiser un repo GitHub, et ajouter un fichier JSON de données.
 
-## Available Scripts
+Ajout de React Router pour gérer les routes de l'application. Cela nécessite l'installation de React Router et de ses dépendances.
 
-In the project directory, you can run:
+Création du routage et des différentes pages de l'application en utilisant React Router. On recommande de créer les pages tout en gérant les erreurs d'URL et de navigation, et d'utiliser Sass pour la mise en page.
 
-### `npm start`
+Création de la page d'accueil comprenant des composants de bannière et de cartes pour afficher les propriétés disponibles. L'accent est mis sur la réutilisation de composants et l'utilisation de Sass pour structurer le CSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Création de la page "À propos" avec un composant Collapse pour afficher les détails. On souligne l'importance de gérer les différents états du composant, d'utiliser les propriétés des composants et de coder l'animation d'ouverture/fermeture du menu.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Création de la page d'erreur pour les routes inexistantes. L'objectif est de suivre le design de la maquette et de s'assurer que toutes les routes invalides mènent à la page d'erreur.
 
-### `npm test`
+Mise en place d'un carrousel pour afficher les images des logements sur la page d'accueil. Cela nécessite d'ajouter des flèches et une numérotation dynamique pour les diapositives, ainsi que des animations CSS pour les transitions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Finalisation de la page de logement en suivant le design de la maquette et en réutilisant le composant Collapse. L'accent est mis sur la structuration du code CSS à l'aide de Sass.
 
-### `npm run build`
+Gestion des erreurs liées aux ID de propriété incorrects en utilisant les fonctionnalités de React Router pour rediriger vers la page d'erreur.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Vérification complète du site en suivant une checklist pour s'assurer que toutes les fonctionnalités demandées sont présentes, que le style correspond à la maquette, que les erreurs sont gérées, et que les composants changeant d'état fonctionnent correctement.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Le projet vise à aboutir à une application web de location immobilière fonctionnelle, esthétiquement conforme à la maquette et efficacement gérée grâce à React et React Router.
